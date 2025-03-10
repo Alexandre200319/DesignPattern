@@ -1,24 +1,22 @@
 class Retangulo {
-    largura: number;
-    altura: number;
+  largura: number;
+  altura: number;
 
-    constructor(largura: number, altura: number) {
-        this.largura = largura;
-        this.altura = altura;
-    }
+  constructor(largura: number, altura: number) {
+    this.largura = largura;
+    this.altura = altura;
+  }
 
-    calcularArea(): number {
-        return this.largura * this.altura;
-    }
+  calcularArea(): number {
+    return this.largura * this.altura;
+  }
 
-    exibirArea(): void {
-        const area = this.calcularArea();
-        console.log(`A área do retângulo é: ${area}`);
-    }
+  exibirArea(): void {
+    const area = this.calcularArea();
+    console.log(`A área do retângulo é: ${area}`);
+  }
 }
-
 
 const retangulo = new Retangulo(10, 5);
 
-
-retangulo.exibirArea(); 
+retangulo.exibirArea();
